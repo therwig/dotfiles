@@ -1,6 +1,6 @@
 
-PS1='\W $ '
-# PS1='[\h \W]$ '
+#PS1='\W $ '
+PS1='[\h \W]$ '
 # useful for systems w multiple nodes
 
 alias e='emacs -nw'
@@ -33,3 +33,19 @@ md () { mkdir -p "$@" && cd "$@"; }
 
 export EDITOR="emacs -nw"
 
+DOTFILEPATH=/uscms/home/therwig/util/dotfiles
+function brt() {
+    if [ -n "$1" ]; then
+        root $1 $DOTFILEPATH/browser.C;
+    else
+        root $DOTFILEPATH/browser.C;
+    fi
+}
+
+function lsrt() {
+    if [ -n "$1" ]; then
+        root $1 $DOTFILEPATH/ls.C;
+    else
+        root $DOTFILEPATH/ls.C;
+    fi
+}
