@@ -51,5 +51,5 @@ function lsrt() {
 }
 
 function tree_entries() {
-    root "~/misc/checkEntries.C(\"$1\")";
+    root "$DOTFILEPATH/checkEntries.C(\"$1\")";
 }
