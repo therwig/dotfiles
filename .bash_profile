@@ -49,3 +49,7 @@ function lsrt() {
         root $DOTFILEPATH/ls.C;
     fi
 }
+
+function tree_entries() {
+    root "~/misc/checkEntries.C(\"$1\")";
+}
