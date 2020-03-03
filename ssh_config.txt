@@ -1,0 +1,158 @@
+ForwardX11 yes
+ForwardX11Trusted yes
+
+# for new version 
+FingerprintHash md5
+
+Host t3i
+	HostName at3i00.hep.upenn.edu
+	User herwig
+
+Host t3f
+        HostName at3f00.hep.upenn.edu
+        User herwig
+
+Host lx
+	Hostname lxplus.cern.ch
+	User therwig
+# 	Protocol 2 
+# 	GSSAPIAuthentication yes 
+# 	GSSAPIDelegateCredentials yes 
+# 	GSSAPITrustDns yes
+# 	PubkeyAuthentication no 
+# 	PasswordAuthentication yes
+# 	ForwardX11 yes
+	
+Host anl
+        Hostname atlas2.hep.anl.gov
+        User therwig
+
+Host dilep
+	Hostname dilepton.hep.upenn.edu
+	User therwig
+
+Host pc
+        Hostname grad02.hep.upenn.edu
+        User herwig
+
+Host slac
+	Hostname rhel6-64.slac.stanford.edu
+	User therwig
+
+Host fastml02
+	Hostname 35.236.248.51
+	User therwig
+	IdentityFile /Users/herwig/.ssh/gcloud
+
+Host kgpu3
+	Hostname 104.154.48.159
+	User therwig
+	IdentityFile /Users/herwig/.ssh/gcloud
+
+Host bnl
+	Hostname atlasgw02.usatlas.bnl.gov
+	User therwig
+	IdentityFile /Users/herwig/.ssh/bnl_id_rsa
+
+#static ip for bnl gw, also 198.125.209.21
+Host bnlip
+	Hostname 198.125.209.20
+	User therwig
+	IdentityFile /Users/herwig/.ssh/bnl_id_rsa
+
+Host bnlold
+	Hostname atlasgw.bnl.gov
+	User therwig
+	IdentityFile /Users/herwig/.ssh/bnl_id_rsa
+
+Host bnlsold
+     Hostname aftpexp.bnl.gov
+     User therwig
+     IdentityFile /Users/herwig/.ssh/bnl_id_rsa
+
+Host bnls
+     Hostname rftpexp.rhic.bnl.gov
+     User therwig
+     IdentityFile /Users/herwig/.ssh/bnl_id_rsa
+
+Host svn.cern.ch svn
+     Protocol 2	 
+     PubkeyAuthentication no
+     GSSAPIAuthentication yes
+     GSSAPIDelegateCredentials yes
+
+Host cmslpc*.fnal.gov
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host lpc6
+    Hostname cmslpc-sl6.fnal.gov
+    User therwig
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host lpc7
+    Hostname cmslpc-sl7.fnal.gov
+    User therwig
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host corr corr2
+    Hostname correlator2.fnal.gov
+    User therwig
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host corr3
+    Hostname correlator3.fnal.gov
+    User therwig
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+Host corr4
+    Hostname correlator4.fnal.gov
+    User therwig
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host accel
+    Hostname accelaigpvm01.fnal.gov
+    User therwig
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+Host accelprod
+    Hostname accelaigpvm01.fnal.gov
+    User gmpsai-prod
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+
+
+host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/bnl_id_rsa
+ User git
+
+# not working
+# host gitlab.cern.ch
+#  HostName gitlab.cern.ch
+#  IdentityFile ~/.ssh/bnl_id_rsa
+#  User git
+#  IdentitiesOnly yes
+
+Host *			       
+     ServerAliveInterval 60	       
