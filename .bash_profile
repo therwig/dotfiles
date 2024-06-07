@@ -51,5 +51,16 @@ function lsrt() {
 }
 
 function tree_entries() {
-    root "$DOTFILEPATH/checkEntries.C(\"$1\")";
+    if [ -n "$2" ]; then
+        root "${DOTFILEPATH}/checkEntries.C(\"$1\",\"$2\")";
+    else
+        root "$DOTFILEPATH/checkEntries.C(\"$1\")";
+    fi
+}
+function tree_branches() {
+    if [ -n "$2" ]; then
+        root "${DOTFILEPATH}/checkBranches.C(\"$1\",\"$2\")";
+    else
+        root "${DOTFILEPATH}/checkBranches.C(\"$1\")";
+    fi
 }
